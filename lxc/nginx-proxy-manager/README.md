@@ -46,6 +46,10 @@ If you are not using proxmox or want to install this on a existing Alpine box, y
 ```bash
 wget --no-cache -qO - https://raw.githubusercontent.com/diegomtnz/npn/main/lxc/nginx-proxy-manager/setup.sh | sh
 ```
+https://blog.openresty.com/en/openresty-pre-built-for-debian-11/
+
+sed -i 's/^pid/#pid/' /etc/openresty/nginx.conf
+
 
 ## Thanks
 
