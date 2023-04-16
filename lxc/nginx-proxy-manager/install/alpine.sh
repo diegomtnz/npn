@@ -129,7 +129,7 @@ for NGINX_CONF in $NGINX_CONFS; do
 done
 
 # Copy runtime files
-mkdir -p /var/www/html /etc/nginx/logs
+mkdir -p /var/www/html /etc/nginx/logs /etc/nginx/conf
 cp -r docker/rootfs/var/www/html/* /var/www/html/
 cp -r docker/rootfs/etc/nginx/* /etc/nginx/
 cp docker/rootfs/etc/letsencrypt.ini /etc/letsencrypt.ini
