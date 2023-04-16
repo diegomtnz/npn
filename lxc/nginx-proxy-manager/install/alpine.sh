@@ -75,7 +75,7 @@ fi
 # Get the latest openresty repository
 _repository_version=$(wget $WGETOPT "http://openresty.org/package/alpine/" -O - | grep -Eo "[0-9]{1}\.[0-9]{1,2}" | sort -uVr | head -n1)
 _repository_version=$(printf "$_repository_version\n$_alpine_version" | sort -V | head -n1)
-_repository="http://openresty.org/package/alpine/v$_repository_version/main"
+_repository="http://openresty.org/package/alpine/v3.15/main"
 
 # Update/Insert openresty repository
 grep -q 'openresty.org' /etc/apk/repositories &&
